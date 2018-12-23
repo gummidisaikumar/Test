@@ -1,6 +1,12 @@
 import React from "react";
 import windowSize from "react-window-size";
-import { Navbar, NavbarToggler, NavbarBrand, Collapse } from "reactstrap";
+import {
+  Navbar,
+  NavbarToggler,
+  NavbarBrand,
+  Collapse,
+  Container
+} from "reactstrap";
 
 import PublicNavigation from "./PublicNavigation/PublicNavigation";
 
@@ -21,12 +27,14 @@ class Navigation extends React.Component {
   render() {
     return (
       <div>
-        <Navbar color="light" light expand="md">
-          <NavbarBrand>Test</NavbarBrand>
-          <NavbarToggler onClick={this.toggle} />
-          <Collapse isOpen={this.state.isOpen} navbar>
-            <PublicNavigation toggleNavBar={this.toggle}/>
-          </Collapse>
+        <Navbar expand="md" className="custom-navbar custom-navbar--postion">
+          <Container className="no-padding container--width">
+            <NavbarBrand>Test</NavbarBrand>
+            <NavbarToggler onClick={this.toggle} />
+            <Collapse isOpen={this.state.isOpen} navbar>
+              <PublicNavigation toggleNavBar={this.toggle} />
+            </Collapse>
+          </Container>
         </Navbar>
       </div>
     );

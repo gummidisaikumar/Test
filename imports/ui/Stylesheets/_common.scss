@@ -1,0 +1,80 @@
+@import "screens-sizes";
+
+:root {
+  font-size: $fs-16px; // 16px standard size
+
+  // Control the font size across all screens based on
+  // root font size
+  //xsmall is for screen size less than 320px
+  @include xsmall {
+    font-size: $fs-9px;
+  }
+
+  //phone is for screen sizes 320px to 409px
+  @include phone {
+    font-size: $fs-9px;
+  }
+
+  //iphone is from 410px to 499px
+  @include iphone {
+    font-size: $fs-10px;
+    /*font-size: 0.75rem;*/
+  }
+
+  //phablet is from 500px to 649px
+  @include phablet {
+    font-size: $fs-12px;
+    /*font-size: 1.15rem;*/
+  }
+
+  //tablet is from 650px to 767px
+  @include tablet {
+    font-size: $fs-13px;
+    /*font-size: 1.15rem;*/
+  }
+
+  //desktop is from 768px to 1023px
+  @include desktop {
+    font-size: $fs-15px;
+    /*font-size: 1.5rem;*/
+  }
+
+  //ipad is from 1024px to 1365px
+  @include iPad {
+    font-size: $fs-15px;
+    /*font-size: 1.35rem;*/
+  }
+
+  //hdRes is from 1366px to 1919px
+  @include hdRes {
+    //font-size: 1.25rem;
+    font-size: $fs-16px;
+  }
+
+  //hdResSmall is from 1920px to 2435px
+  @include hdResSmall {
+    font-size: $fs-20px;
+  }
+
+  //hdResMedium is from 2436px to 3838px
+  @include hdResMedium {
+    font-size: $fs-28px;
+    /*font-size: 1.5rem;*/
+  }
+
+  //hdResLarge is from 3840px
+  @include hdResLarge {
+    font-size: $fs-36px;
+  }
+}
+
+.no-padding {
+  padding: 0;
+}
+.no-margin {
+  margin: 0;
+}
+.container--width {
+  max-width: 85%;
+  margin: auto;
+}

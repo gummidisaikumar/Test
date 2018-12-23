@@ -1,7 +1,9 @@
 import React from "react";
+import { Row, Col } from "reactstrap";
 
-import RenderPage from "../../Customcomponents/Common/RenderPage/RenderPage";
-import Strip from '../../Customcomponents/Common/Strip/Strip';
+import Strip from "../../Customcomponents/Common/Strip/Strip";
+import VideoMusic from '../../Customcomponents/Common/VideoMusic/VideoMusic';
+import LatestMusicData from './LatestMusicData';
 
 class LatestMusic extends React.Component {
   constructor(props) {
@@ -9,11 +11,20 @@ class LatestMusic extends React.Component {
   }
   render() {
     return (
-      <RenderPage className="render-page" containerType="container-fluid">
-        <Strip className="strip" containerType="container-fluid">
-          <h1>LatestMusic</h1>
-        </Strip>
-      </RenderPage>
+      <Strip
+        className="strip strip--short"
+        containerType="container-fluid"
+        id="latest-music"
+      >
+        <Row className="container--width">
+          <Col xl={12} className="no-padding">
+            <h1>LatestMusic</h1>
+          </Col>
+          <Col xl={12} className="no-padding">
+            <VideoMusic data={LatestMusicData}/>
+          </Col>
+        </Row>
+      </Strip>
     );
   }
 }

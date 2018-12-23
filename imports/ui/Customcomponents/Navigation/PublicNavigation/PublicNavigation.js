@@ -11,38 +11,41 @@ class PublicNavigation extends React.Component {
   }
   render() {
     return (
-      <Nav>
-        <NavItem className="nav-item--custom">
+      <Nav className="custom-nav">
+        <NavItem className="custom-nav--item">
           <Link
             scroll={el =>
               el.scrollIntoView({ behavior: "smooth", block: "center" })
             }
             to="/#home"
+            className="custom-nav--item_link"
             onClick={() => this.props.toggleNavBar()}
           >
             Home
           </Link>
         </NavItem>
-        <NavItem className="nav-item--custom">
+        <NavItem className="custom-nav--item">
           <Link
             scroll={el =>
               el.scrollIntoView({ behavior: "smooth", block: "center" })
             }
             to="/#latest-music"
+            className="custom-nav--item_link"
             onClick={() => this.props.toggleNavBar()}
           >
             latest-music
           </Link>
         </NavItem>
-        <NavItem className="nav-item--custom">
+        <NavItem className="custom-nav--item">
           <Link
             scroll={el =>
               el.scrollIntoView({ behavior: "smooth", block: "center" })
             }
             to="/#trailers"
+            className="custom-nav--item_link"
             onClick={() => this.props.toggleNavBar()}
           >
-            latest-music
+            Trailers
           </Link>
         </NavItem>
 

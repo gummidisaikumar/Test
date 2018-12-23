@@ -1,0 +1,24 @@
+.custom-navbar {
+  background-color: $white;
+  box-shadow: 0 $fs-1px 0 0 $gains-boro;
+}
+.custom-navbar--postion {
+  position: fixed;
+  top: $fs-0px;
+  width: 100%;
+  z-index: 999;
+}
+.custom-nav {
+  width: 100%;
+  justify-content: flex-end;
+}
+.custom-nav--item {
+  padding: 0.5rem 1rem;
+}
+.custom-nav--item_link {
+  color: $tiber-green;
+  &:hover {
+    text-decoration: none;
+    color: $tiber-green;
+  }
+}
