@@ -78,3 +78,28 @@
   max-width: 85%;
   margin: auto;
 }
+
+.ReactModal__Content {
+  position: absolute;
+  top: 70px !important;
+  left: 0 !important;
+  right: 0 !important;
+  bottom: 40px;
+  border: 1px solid rgb(204, 204, 204);
+  background: rgba(0, 0, 0, 0.45) !important;
+}
+
+.p-medium{
+ font-size: $fs-14px; 
+}
+
+.gallery-title{
+margin: 0;
+padding: 0;
+}
+
+.common-flex{
+display: flex;
+align-items: center;
+justify-content: center;
+}

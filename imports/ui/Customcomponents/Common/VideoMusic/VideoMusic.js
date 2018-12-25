@@ -1,24 +1,24 @@
 import React from "react";
 import PropTypes from "prop-types";
 
+
 import { Row, Col } from "reactstrap";
-import CloudinaryImage from '../CloudinaryImage/CloudinaryImage';
+import DisplayData from '../DisplayData/DisplayData';
+import CloudinaryImage from "../CloudinaryImage/CloudinaryImage";
+import VideoMusicItem from "../../../Customcomponents/Common/VideoMusicItem/VideoMusicItem";
 
 class VideoMusic extends React.Component {
   constructor(props) {
     super(props);
   }
+
   render() {
-    console.log(this.props.data);
     return (
       <Row>
         {this.props.data
-          ? this.props.data.map(item => (
-              <Col xl={3} key={item.id}>
-              <CloudinaryImage publicId={item.image}/>
-               <p>{item.title}</p>
-               <p>{item.subTitle}</p>
-               <p>{item.video}</p> 
+          ? this.props.data.map((item, index) => (
+              <Col xl={3} key={index}>
+                <DisplayData key={item.id} {...item}/>
               </Col>
             ))
           : null}
@@ -28,7 +28,8 @@ class VideoMusic extends React.Component {
 }
 
 VideoMusic.propTypes = {
-  data: PropTypes.array.isRequired,
+  data: PropTypes.array.isRequired
 };
 
 export default VideoMusic;
+
