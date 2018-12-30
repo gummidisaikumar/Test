@@ -6,6 +6,7 @@ import Navigation from '../../Customcomponents/Navigation/Navigation';
 import Home from "../../customPages/Home/Home";
 import LatestMusic from '../../customPages/LatestMusic/LatestMusic';
 import Trailers from '../../customPages/Trailers/Trailers';
+import Footer from '../../Customcomponents/Footer/Footer';
 
 const StyledApp = Styled.div`
 > p{
@@ -33,6 +34,7 @@ class App extends React.PureComponent {
           <Route path="/latest-music" component={LatestMusic} {...props} />
           <Route path="/trailers" component={Trailers} {...props} />>
         </Switch>
+        <Footer/>
       </StyledApp>
     );
   }

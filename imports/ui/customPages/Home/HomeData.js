@@ -1,7 +1,9 @@
+import publicIds from '../../constants/cloudinary_static_public_ids';
+
 const HomeData=[
    {
       id: 00,
-      image: 'happy',
+      image: publicIds.happyImg,
       title: 'Egire Mabbulalona Telugu Video Song || Happy Movie || Allu Arjun, Genelia',
       subTitle: 'Trend Music',
       views: '5.5M views',
@@ -10,7 +12,7 @@ const HomeData=[
    },
    {
     id: 01,
-    image: 'yeda-poyinado',
+    image: publicIds.yedaPoyinadoImg,
     title: 'Yeda Poyinado - Full Video | Aravindha Sametha | Jr. NTR, Pooja Hegde | Thaman S',
     subTitle: 'Trend Music',
     views: '1.5k views',
@@ -19,7 +21,7 @@ const HomeData=[
  },
  {
     id: 02,
-    image: 'Reddamma-Thalli',
+    image: publicIds.reddamaThali,
     title: 'Reddamma Thalli Video Song Promo | Aravindha Sametha Veera Raghava',
     subTitle: 'Trend Music',
     views: '9.5M views',
@@ -28,7 +30,7 @@ const HomeData=[
  },
  {
     id: 03,
-    image: 'yeda-poyinado',
+    image: publicIds.yedaPoyinadoImg,
     title: 'Yeda Poyinado - Full Video | Aravindha Sametha | Jr. NTR, Pooja Hegde | Thaman S',
     subTitle: 'Trend Music',
     views: '1.5k views',
@@ -38,7 +40,7 @@ const HomeData=[
  },
  {
     id: 04,
-    image: 'happy',
+    image: publicIds.happyImg,
     title: 'Egire Mabbulalona Telugu Video Song || Happy Movie || Allu Arjun, Genelia',
     subTitle: 'Trend Music',
     views: '9.5M views',
@@ -48,7 +50,7 @@ const HomeData=[
  },
  {
     id: 05,
-    image: 'Reddamma-Thalli',
+    image: publicIds.reddamaThali,
     title: 'Reddamma Thalli Video Song Promo | Aravindha Sametha Veera Raghava',
     subTitle: 'Trend Music',
     views: '9.5M views',
@@ -57,7 +59,7 @@ const HomeData=[
  },
  {
     id: 06,
-    image: 'happy',
+    image: publicIds.happyImg,
     title: 'Egire Mabbulalona Telugu Video Song || Happy Movie || Allu Arjun, Genelia',
     subTitle: 'Trend Music',
     views: '9.5M views',

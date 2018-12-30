@@ -14,8 +14,8 @@ class Home extends React.Component {
   }
   render() {
     return (
-      <RenderPage className="render-page" containerType="container-fluid">
-        <Strip className="strip strip--short" containerType="container-fluid" id="home">
+      <RenderPage className="render-page no-padding" containerType="container-fluid">
+        <Strip className="strip strip--short no-padding" containerType="container-fluid" id="home">
           <Row className="container--width">
             <Col xl={12} className="no-padding">
               <h2 className="section__title pt-8px pb-8px pl-16px pr-16px">Home</h2>
@@ -33,6 +33,9 @@ class Home extends React.Component {
          <hr className="section-divider"/>  
         </div>
         <Trailers />
+        <div className="container--width pl-12px pr-12px">
+         <hr className="section-divider"/>  
+        </div>
       </RenderPage>
     );
   }

@@ -1,8 +1,9 @@
+import publicIds from '../../constants/cloudinary_static_public_ids';
 
 const TrailersData=[
     {
        id: 20,
-       image: 'ramcharan',
+       image: publicIds.charanImg,
        title: 'Vinaya Vidheya Rama Trailer - Ram Charan, Kiara Advani | Boyapati Sreenu | DVV Danayya ',
        subTitle: 'DVV Entertainment',
        views: '1.5k views',
@@ -11,7 +12,7 @@ const TrailersData=[
     },
     {
      id: 21,
-     image: 'Ntr-1',
+     image: publicIds.balaImg,
      title: '#NTR Official Trailer | #NTRKathanayakudu #NTRMahanayakudu | Nandamuri Balakrishna | Krish',
      subTitle: 'NBK Films',
      views: '1.5k views',
@@ -20,7 +21,7 @@ const TrailersData=[
   },
   {
      id: 22,
-     image: 'ramcharan',
+     image: publicIds.charanImg,
      title: 'Vinaya Vidheya Rama Trailer - Ram Charan, Kiara Advani | Boyapati Sreenu | DVV Danayya ',
      subTitle: 'DVV Entertainment',
      views: '1.5k views',
@@ -29,7 +30,7 @@ const TrailersData=[
   },
   {
      id: 23,
-     image: 'Ntr-1',
+     image: publicIds.balaImg,
      title: '#NTR Official Trailer | #NTRKathanayakudu #NTRMahanayakudu | Nandamuri Balakrishna | Krish',
      subTitle: 'NBK Films',
      views: '1.5k views',
@@ -38,7 +39,7 @@ const TrailersData=[
   },
   {
      id: 24,
-     image: 'ramcharan',
+     image: publicIds.charanImg,
      title: 'Vinaya Vidheya Rama Trailer - Ram Charan, Kiara Advani | Boyapati Sreenu | DVV Danayya ',
      subTitle: 'DVV Entertainment',
      views: '1.5k views',
@@ -47,7 +48,7 @@ const TrailersData=[
   },
   {
      id: 25,
-     image: 'Ntr-1',
+     image: publicIds.balaImg,
      title: '#NTR Official Trailer | #NTRKathanayakudu #NTRMahanayakudu | Nandamuri Balakrishna | Krish',
      subTitle: 'NBK Films',
      views: '1.5k views',
@@ -56,7 +57,7 @@ const TrailersData=[
   },
   {
      id: 26,
-     image: 'ramcharan',
+     image: publicIds.charanImg,
      title: 'Vinaya Vidheya Rama Trailer - Ram Charan, Kiara Advani | Boyapati Sreenu | DVV Danayya ',
      subTitle: 'DVV Entertainment',
      views: '1.5k views',
