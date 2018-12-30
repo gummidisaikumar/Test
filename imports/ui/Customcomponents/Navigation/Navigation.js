@@ -7,7 +7,7 @@ import {
   Collapse,
   Container
 } from "reactstrap";
-
+import { HashLink as Link } from "react-router-hash-link";
 import PublicNavigation from "./PublicNavigation/PublicNavigation";
 
 class Navigation extends React.Component {
@@ -29,7 +29,14 @@ class Navigation extends React.Component {
       <div>
         <Navbar expand="md" className="custom-navbar custom-navbar--postion">
           <Container className="no-padding container--width">
-            <NavbarBrand>Test</NavbarBrand>
+            <NavbarBrand>
+            <Link
+            to="/#home"
+            className="custom-nav--item_link"
+            >
+            Test
+          </Link>
+            </NavbarBrand>
             <NavbarToggler onClick={this.toggle} />
             <Collapse isOpen={this.state.isOpen} navbar>
               <PublicNavigation toggleNavBar={this.toggle} />

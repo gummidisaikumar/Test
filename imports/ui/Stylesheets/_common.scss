@@ -1,5 +1,5 @@
 @import "screens-sizes";
-
+@import "colors";
 :root {
   font-size: $fs-16px; // 16px standard size
 
@@ -68,38 +68,128 @@
   }
 }
 
+@mixin setFont(
+  $font-weight,
+  $font-style,
+  $front-stretch,
+  $letter-spacing,
+  $text-align
+) {
+  font-weight: $font-weight;
+  font-style: $font-style;
+  font-stretch: $front-stretch;
+  letter-spacing: $letter-spacing;
+  text-align: $text-align;
+}
+
+@mixin setPadding(
+  $padding-top,
+  $padding-left,
+  $padding-bottom,
+  $padding-right
+) {
+  padding-top: $padding-top;
+  padding-left: $padding-left;
+  padding-bottom: $padding-bottom;
+  padding-right: $padding-right;
+}
+@mixin setMargin($margin-top, $margin-left, $margin-bottom, $margin-right) {
+  margin-top: $margin-top;
+  margin-left: $margin-left;
+  margin-bottom: $margin-bottom;
+  margin-right: $margin-right;
+}
 .no-padding {
-  padding: 0;
+  @include setPadding(0, 0, 0, 0);
 }
 .no-margin {
-  margin: 0;
+  @include setMargin(0, 0, 0, 0);
 }
 .container--width {
   max-width: 85%;
   margin: auto;
 }
 
-.ReactModal__Content {
-  position: absolute;
-  top: 70px !important;
-  left: 0 !important;
-  right: 0 !important;
-  bottom: 40px;
-  border: 1px solid rgb(204, 204, 204);
-  background: rgba(0, 0, 0, 0.45) !important;
+.p-medium {
+  font-size: $fs-14px !important;
+  line-height: calc(0.875rem * 1.14) !important;
 }
 
-.p-medium{
- font-size: $fs-14px; 
+.gallery-title {
+  font-family: $avenir-medium;
+  @include setFont(600, normal, normal, normal, left);
+  @include setPadding(0, 0, 0, 0);
+  @include setMargin(0, 0, 0, 0);
+}
+.gallery-sub-title {
+  font-family: $avenirNext-medium;
+  @include setFont(500, normal, normal, normal, left);
+  @include setPadding(0, 0, 0, 0);
+  @include setMargin(0, 0, 0, 0);
+}
+.section__title {
+  font-family: $avenirNext-medium;
+  @include setFont(500, normal, normal, normal, left);
+  @include setPadding(0, 0, 0, 0);
+  @include setMargin(0, 0, 0, 0);
+}
+.common-flex {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.modal__container-position {
+  max-width: 100%;
+  margin: 0;
+}
+.modal__content-container {
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.75);
+}
+.modal-header {
+  border-bottom: 0;
+}
+.modal__title {
+  color: #fff;
+}
+.modal-header {
+  .close {
+    color: #fff;
+    text-shadow: none;
+    &:focus {
+      outline: none !important;
+    }
+  }
 }
 
-.gallery-title{
-margin: 0;
-padding: 0;
+.section-divider {
+  border-bottom: $fs-1px solid #d5d5d5;
 }
 
-.common-flex{
-display: flex;
-align-items: center;
-justify-content: center;
+.h4-small {
+  font-size: $fs-20px !important;
+  line-height: calc(1.25rem * 1.14) !important;
+}
+
+.title-overflow-ellipsis {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  height: calc(1.55rem / 1 * 2);
+}
+.img__container {
+  &:hover {
+    content: "/f01d";
+  }
+}
+.align-item-unset{
+  align-items: unset;
+}
+.title-nobel-grey{
+  color: $nobel-grey;
+}
+.title-light-grey{
+  color: $light-grey;
+}
+.title-dim-grey{
+  color: $dim-grey;
 }

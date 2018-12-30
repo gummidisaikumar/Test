@@ -18,14 +18,20 @@ class Home extends React.Component {
         <Strip className="strip strip--short" containerType="container-fluid" id="home">
           <Row className="container--width">
             <Col xl={12} className="no-padding">
-              <h1>Home</h1>
+              <h2 className="section__title pt-8px pb-8px pl-16px pr-16px">Home</h2>
             </Col>
             <Col xl={12}>
               <VideoMusic data={HomeData}/>
             </Col>
           </Row>
         </Strip>
+        <div className="container--width pl-12px pr-12px">
+         <hr className="section-divider"/>  
+        </div>
         <LatestMusic />
+        <div className="container--width pl-12px pr-12px">
+         <hr className="section-divider"/>  
+        </div>
         <Trailers />
       </RenderPage>
     );

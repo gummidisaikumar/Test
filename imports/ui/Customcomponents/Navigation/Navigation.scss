@@ -17,6 +17,8 @@
 }
 .custom-nav--item_link {
   color: $tiber-green;
+  font-family: $avenir-medium;
+  @include setFont(500, normal, normal, normal, center);
   &:hover {
     text-decoration: none;
     color: $tiber-green;

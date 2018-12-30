@@ -18,7 +18,7 @@ class LatestMusic extends React.Component {
       >
         <Row className="container--width">
           <Col xl={12} className="no-padding">
-            <h1>LatestMusic</h1>
+            <h2 className="section__title pt-8px pb-8px">LatestMusic</h2>
           </Col>
           <Col xl={12} className="no-padding">
             <VideoMusic data={LatestMusicData}/>

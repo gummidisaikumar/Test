@@ -14,7 +14,7 @@ class Trailers extends React.Component {
       <Strip className="strip strip--short" containerType="container-fluid" id="trailers">
         <Row className="container--width">
           <Col xl={12} className="no-padding">
-            <h1>Trailers</h1>
+            <h2 className="section__title pt-8px pb-8px">Trailers</h2>
           </Col>
           <Col xl={12} className="no-padding">
             <VideoMusic data={TrailersData}/>
