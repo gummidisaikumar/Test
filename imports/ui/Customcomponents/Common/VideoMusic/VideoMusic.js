@@ -15,7 +15,7 @@ class VideoMusic extends React.Component {
       <Row>
         {this.props.data
           ? this.props.data.map((item, index) => (
-              <Col xl={3} key={index} className="pt-16px pb-16px">
+              <Col sm={12} sm={12} md={6} lg={6} xl={3} key={index} className="pt-16px pb-16px">
                 <DisplayData key={item.id} {...item}/>
               </Col>
             ))

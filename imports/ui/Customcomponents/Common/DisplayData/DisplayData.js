@@ -25,7 +25,7 @@ class DisplayData extends React.Component {
     const { image, title, id, subTitle, video, views, daysMonths } = this.props;
     return (
       <Row>
-        <Col xl={12} onClick={this.toggle} className="img__container">
+        <Col xs={12} sm={12} md={12} lg={12} xl={12} onClick={this.toggle} className="img__container">
           <CloudinaryImage publicId={image} />
           <Modal
             isOpen={this.state.modal}
@@ -41,7 +41,7 @@ class DisplayData extends React.Component {
             </ModalBody>
           </Modal>
         </Col>
-        <Col xl={12}>
+        <Col xs={12} sm={12} md={12} lg={12} xl={12}>
           <h4 className="h4-small gallery-title title-overflow-ellipsis pt-4px pb-4px">{title}</h4>
           <p className="p-medium gallery-sub-title pt-2px pb-2px title-dim-grey common-flex justify-content-start">
             {subTitle}
